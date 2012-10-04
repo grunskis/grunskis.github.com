@@ -2,11 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>grunskis.com</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- openid -->
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://grunskis.myopenid.com/" />
+
+    <link rel="stylesheet" href="/static/css/main.css?v=4" type="text/css">
+    <script type="text/javascript" src="/static/js/invader.js?v=4"></script>
+    <script type="text/javascript" src="/static/js/site.js?v=4"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-219951-4']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <script type="text/javascript">
+      var mp_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+      document.write(unescape("%3Cscript src='" + mp_protocol + "api.mixpanel.com/site_media/js/api/mixpanel.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
   </head>
   <body>
-    <h1>Project demos</h1>
-    <ol>
-      <li><a href="http://grunskis.github.com/sandbox/gameoflife/">Conway's Game of Life</a></li>
-    </ol>
+    <div id="content">
+      <div id="game">
+        <canvas id="invader" width="300" height="200"></canvas>
+        <p id="hint">shoot the invader, he knows things...</p>
+      </div>
+
+      <ul id="things">
+        <li>Martins Grunskis...</li>
+        <li>has a twitter <a href="http://twitter.com/grunskis">account</a></li>
+        <li>publishes code on <a href="http://github.com/grunskis">github</a></li>
+        <li>has some work <a href="http://lv.linkedin.com/in/grunskis">experience</a></li>
+        <li>loves to travel the <a href="http://www.couchsurfing.org/people/grunskis">couchsurfing</a> way</li>
+        <li>enjoys riding <a href="http://vimeo.com/5862934">fixed gear</a> bikes</li>
+        <li>is fighting against <a href="http://www.neperczagtu.lv">bike thieves</a></li>
+        <li>prefers <a href="mailto:martins@grunskis.com">e-mail</a> instead of facebook</li>
+      </ul>
+    </div>
   </body>
 </html>
